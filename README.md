@@ -1,5 +1,6 @@
 # Economy-Simulation
 ### An economy simulator to be run from the console.
+Latest version found in the Build 0.3 folder - 0.3.6
 
 Note: I created this project early on to see what I could do with Python. It is far from best practice, has a few unused elements, needs quite a bit of commentation, and serves mainly as a prototype. I may come back to revamp much of it in the future.
 
@@ -11,13 +12,13 @@ The simulation script creates class objects for every citizen and company with r
 
 At the start of the simualtion a population and wealth brackets (wealthy, middle, poor) designated with population percentages are assigned to start up the simulation. Wealthy enough citizens then create businesses.
 
-The simulation runs, unemployed citizens apply for jobs and companies pay employees. Companies hire more individuals to make money, can become more "popular", and will lay off employees if they need to save or even file for bankrupcy when they hit low wealth values that are too negative. Citizens buy food each month, take bank loans when needed, pay interest on loans, apply for jobs when unemployed, and occaisionally take out business loans to create a new company.
+The simulation runs, unemployed citizens apply for jobs and companies pay employees. Companies hire more individuals to make money, can become more "popular", and will lay off employees if they need to save or even file for bankrupcy when they hit wealth values that are too negative. Citizens buy food each month, take bank loans when needed, pay interest on loans, apply for jobs when unemployed, and occasionally take out business loans to create a new company.
 
-At the end of the simulation, each object can be investigated to determine its stats and the log_r method can be used to return a datailed log report of the events related to that citizen/business object.
+At the end of the simulation, each object can be investigated to determine its attributes and the log_r method can be used to return a datailed log report of the events related to that citizen/company object.
 
 ## Simulation Parameters
 
-The simulation parameters may be changed at the bottom of the script file under the "Test Commands" section in the "start_simulation_env()" method. Population is the number of citizen objects that will be present throughout the simulation, wealthy, middle, and poor are the percentages of the population in each wealth bracket at the start. The value of the range function below that dtermines the number of simulated months the simulation will run for.
+The simulation parameters may be changed at the bottom of the script file under the "Test Commands" section in the "start_simulation_env()" method. Population is the number of citizen objects that will be present throughout the simulation, wealthy, middle, and poor are the percentages of the population in each wealth bracket at the start given as ints (exceeding 100 total is okay, they are weighted by their combined value). The value of the range function below that determines the number of simulated months the simulation will run for.
 
 
 ## Results Exploration
