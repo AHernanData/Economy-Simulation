@@ -28,10 +28,10 @@ The simulation parameters may be changed at the bottom of the script file under 
 All objects have the log_r() method to print a log of events which occured to that particular object during the simulation.
 
 Some useful global variables:
-richest - The citizen object with the highest wealth at the end of the simulation.
-richest_c - The company object with the highest wealth at the end of the simulation.
-richest_f, richest_m, richest_b - the richest food, manufacturing, and bank company objects respectively.
-oldest_f, oldest_m, oldest_b - the longest running (and not yet failed) food, manufacturing, and bank company objects respectively.
+- richest - The citizen object with the highest wealth at the end of the simulation.
+- richest_c - The company object with the highest wealth at the end of the simulation.
+- richest_f, richest_m, richest_b - the richest food, manufacturing, and bank company objects respectively.
+- oldest_f, oldest_m, oldest_b - the longest running (and not yet failed) food, manufacturing, and bank company objects respectively.
 
 Useful citizen attributes:
 - name - citizen's name
