@@ -49,7 +49,7 @@ Useful company attributes:
 - funds - the actual cash a company has available
 - employees -  a list of citizen objects who are the company's employees
 - job_positions - the number of employees the company can hire
-- influence - a value used to weigh the odds in this companies favor when citizens choose to interact with a company (apply for a job, buy food, take out a loan, ect)
+- influence - a value used to weigh the odds in this company's favor when citizens choose to interact with a company (apply for a job, buy food, take out a loan, ect)
 
 Useful bank company specific attributes:
 - members - a list of citizen objects who are the bank's current clients
