@@ -9,7 +9,7 @@ Needed dependancies: names, simpy, termcolor
 
 The simulation script creates class objects for every citizen and company with randomly generated names.
 
-At the start of the simualtion a population and wealth brackets (wealthy, middle, poor) designated with population percentages are assigned to start up the simulation. Wealthy enough citizen then create businesses.
+At the start of the simualtion a population and wealth brackets (wealthy, middle, poor) designated with population percentages are assigned to start up the simulation. Wealthy enough citizens then create businesses.
 
 The simulation runs, unemployed citizens apply for jobs and companies pay employees. Companies hire more individuals to make money, can become more "popular", and will lay off employees if they need to save or even file for bankrupcy when they hit low wealth values that are too negative. Citizens buy food each month, take bank loans when needed, pay interest on loans, apply for jobs when unemployed, and occaisionally take out business loans to create a new company.
 
