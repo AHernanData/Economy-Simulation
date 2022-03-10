@@ -12,7 +12,7 @@ Note: I created this project early on to see what I could do with Python. It is 
 
 The simulation script creates class objects for every citizen and company with randomly generated names. It is designed to mimic a simplified, modern economy with citizen agents and the companies they use, work for, or possibly own.
 
-At the start of the simualtion a population and wealth brackets (wealthy, middle, poor) designated with population percentages are assigned to start up the simulation. Wealthy enough citizens then create businesses.
+At the start of the simulation a population and wealth brackets (wealthy, middle, poor) designated with population percentages are assigned to start up the simulation. Wealthy enough citizens then create businesses.
 
 The simulation runs, unemployed citizens apply for jobs and companies pay employees. Companies hire more individuals to make money, can become more "popular", and will lay off employees if they need to save or even file for bankrupcy when they hit wealth values that are too negative. Citizens buy food each month, take bank loans when needed, pay interest on loans, apply for jobs when unemployed, and occasionally take out business loans to create a new company.
 
