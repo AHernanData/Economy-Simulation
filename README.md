@@ -1,20 +1,22 @@
 # Economy-Simulation
-### An economy simulator to be run from the console.
+### An economy simulator to be run from the python console.
 Latest version found in the Build 0.3 folder - 0.3.6
 
 Note: I created this project early on to see what I could do with Python. It is far from best practice, has a few unused elements, needs quite a bit of commentation, and serves mainly as a prototype. I may come back to revamp much of it in the future.
 
-Needed dependancies: names, simpy, termcolor
+## Dependancies 
+
+**names**, **simpy**, and **termcolor** are required to run the script.
 
 ## Summary
 
-The simulation script creates class objects for every citizen and company with randomly generated names.
+The simulation script creates class objects for every citizen and company with randomly generated names. It is designed to mimic a simplified, modern economy with citizen agents and the companies they use, work for, or possibly own.
 
 At the start of the simualtion a population and wealth brackets (wealthy, middle, poor) designated with population percentages are assigned to start up the simulation. Wealthy enough citizens then create businesses.
 
 The simulation runs, unemployed citizens apply for jobs and companies pay employees. Companies hire more individuals to make money, can become more "popular", and will lay off employees if they need to save or even file for bankrupcy when they hit wealth values that are too negative. Citizens buy food each month, take bank loans when needed, pay interest on loans, apply for jobs when unemployed, and occasionally take out business loans to create a new company.
 
-At the end of the simulation, each object can be investigated to determine its attributes and the log_r method can be used to return a datailed log report of the events related to that citizen/company object.
+At the end of the simulation, each object can be investigated to determine its attributes and the log_r method can be used to return a detailed log report of the events related to that citizen/company object.
 
 ## Simulation Parameters
 
@@ -32,27 +34,27 @@ richest_f, richest_m, richest_b - the richest food, manufacturing, and bank comp
 oldest_f, oldest_m, oldest_b - the longest running (and not yet failed) food, manufacturing, and bank company objects respectively.
 
 Useful citizen attributes:
-name - citizen's name
-money - the money held by the citizen
-employed - 0 means unemployed, 1 means employed
-credit - credit score of the citizen
-happiness - happiness value of the citizen (not too developed)
+- name - citizen's name
+- money - the money held by the citizen
+- employed - 0 means unemployed, 1 means employed
+- credit - credit score of the citizen
+- happiness - happiness value of the citizen (not too developed)
 
 Useful company attributes:
-name - company's name (this can also be used to determine its business type; food companies have food names, banks have financial words in their names, manufacturing companies are basically anything else)
-age - number of months the company has been running since its creation
-owner - the citizen object who created the company
-product - the product type of the business represented as an int. 0 : food company, 1 : manufacturing company, 2 : bank company
-worth - the value of the company which starts at 60% funds used to establish it and increases/decreases by 10% of the company's funds + 30% of the company's profits each month. (worth is used to determine popularity/influence and the maximum number of employees a company can have)
-funds - the actual cash a company has available
-employees -  a list of citizen objects who are the company's employees
-job_positions - the number of employees the company can hire
-influence - a value used to weigh the odds in this companies favor when citizens choose to interact with a company (apply for a job, buy food, take out a loan, ect)
+- name - company's name (this can also be used to determine its business type; food companies have food names, banks have financial words in their names, manufacturing companies - are basically anything else)
+- age - number of months the company has been running since its creation
+- owner - the citizen object who created the company
+- product - the product type of the business represented as an int. 0 : food company, 1 : manufacturing company, 2 : bank company
+- worth - the value of the company which starts at 60% funds used to establish it and increases/decreases by 10% of the company's funds + 30% of the company's profits each - month. (worth is used to determine popularity/influence and the maximum number of employees a company can have)
+- funds - the actual cash a company has available
+- employees -  a list of citizen objects who are the company's employees
+- job_positions - the number of employees the company can hire
+- influence - a value used to weigh the odds in this companies favor when citizens choose to interact with a company (apply for a job, buy food, take out a loan, ect)
 
 Useful bank company specific attributes:
-members - a list of citizen objects who are the bank's current clients
-liabilities - total funds held in savings accounts by clients
-assets - total money loaned out to clients
+- members - a list of citizen objects who are the bank's current clients
+- liabilities - total funds held in savings accounts by clients
+- assets - total money loaned out to clients
 
 
 
