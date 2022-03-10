@@ -45,7 +45,7 @@ Useful company attributes:
 - age - number of months the company has been running since its creation
 - owner - the citizen object who created the company
 - product - the product type of the business represented as an int. 0 : food company, 1 : manufacturing company, 2 : bank company
-- worth - the value of the company which starts at 60% funds used to establish it and increases/decreases by 10% of the company's funds + 30% of the company's profits each - month. (worth is used to determine popularity/influence and the maximum number of employees a company can have)
+- worth - the value of the company which starts at 60% funds used to establish it and increases/decreases by 10% of the company's funds + 30% of the company's profits each month. (worth is used to determine popularity/influence and the maximum number of employees a company can have)
 - funds - the actual cash a company has available
 - employees -  a list of citizen objects who are the company's employees
 - job_positions - the number of employees the company can hire
