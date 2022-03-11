@@ -20,7 +20,7 @@ At the end of the simulation, each object can be investigated to determine its a
 
 ## Simulation Parameters
 
-The simulation parameters may be changed at the bottom of the script file under the "Test Commands" section in the "start_simulation_env()" method. Population is the number of citizen objects that will be present throughout the simulation, wealthy, middle, and poor are the percentages of the population in each wealth bracket at the start given as ints (exceeding 100 total is okay, they are weighted by their combined value). The value of the range function below that determines the number of simulated months the simulation will run for.
+The simulation parameters may be changed at the bottom of the script file under the "Test Commands" section in the "start_simulation_env()" method. Population is the number of citizen objects that will be present throughout the simulation, wealthy, middle, and poor are the percentages of the population in each wealth bracket at the start given as ints (exceeding 100 total is okay, they are weighted against their combined value). The value of the range function below that determines the number of simulated months the simulation will run for.
 
 
 ## Results Exploration
@@ -45,7 +45,7 @@ Useful company attributes:
 - age - number of months the company has been running since its creation
 - owner - the citizen object who created the company
 - product - the product type of the business represented as an int. 0 : food company, 1 : manufacturing company, 2 : bank company
-- worth - the value of the company which starts at 60% funds used to establish it and increases/decreases by 10% of the company's funds + 30% of the company's profits each month. (worth is used to determine popularity/influence and the maximum number of employees a company can have)
+- worth - the value of the company which starts at 60% of the funds used to establish it and increases/decreases by 10% of the company's funds + 30% of the company's profits each month. (worth is used to determine popularity/influence and the maximum number of employees a company can have)
 - funds - the actual cash a company has available
 - employees -  a list of citizen objects who are the company's employees
 - job_positions - the number of employees the company can hire
