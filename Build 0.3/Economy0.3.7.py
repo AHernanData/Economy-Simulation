@@ -1,12 +1,10 @@
-import os, sys, simpy, random, statistics, names
+import os, sys, random, statistics, names
 names_folder = os.path.join(os.pardir,"Food_names")
 sys.path.append(names_folder)
 import CompNames
 from termcolor import colored, cprint
 
 
-env = simpy.Environment()
-land = simpy.Resource(env, capacity=100)
 def gen(n):
     for i in range(n):
         yield i
