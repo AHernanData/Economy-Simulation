@@ -516,9 +516,10 @@ class simulation:
     log = []
     
     def start_simulation_env(population,wealthy=20,middle=60,poor=20):
-        wealthy_pop = int((wealthy/100)*population)
-        middle_pop = int((middle/100)*population)
-        poor_pop = int((poor/100)*population)
+        total_weight = wealthy + middle + poor
+        wealthy_pop = int((wealthy/total_weight)*population)
+        middle_pop = int((middle/total_weight)*population)
+        poor_pop = int((poor/total_weight)*population)
         for i in range(wealthy_pop):
             exec("%s = citizen(random.randrange(1000,5000,100),random.randrange(3,5))" % ('P{}'.format(i)),globals())
         for i in range(middle_pop):
