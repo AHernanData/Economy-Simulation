@@ -1,12 +1,12 @@
 # Economy-Simulation
 ### An economy simulator to be run from the python console.
-Latest version found in the Build 0.3 folder - 0.3.6
+Latest version found in the Build 0.3 folder - 0.3.7
 
 Note: I created this project early on to see what I could do with Python. It is far from best practice, has a few unused elements, needs quite a bit of commentation, and serves mainly as a prototype. I may come back to revamp much of it in the future.
 
-## Dependancies 
+## Dependencies 
 
-**names**, **simpy**, and **termcolor** are required to run the script.
+**names** and **termcolor** are required to run the script.
 
 ## Summary
 
