@@ -57,5 +57,50 @@ Useful bank company specific attributes:
 - assets - total money loaned out to clients
 
 
+## Example Images
+### Simulation Start
+![Run Start](https://github.com/AHernanData/Economy-Simulation/blob/main/images/hired.PNG?raw=true)
+
+Here is the start of a simulation. "Month X" marks the current month of the simualtion and at the start all the newly founded companies are hiring new employees from the population. Citizens stating "this sucks" are those who are too poor to afford food during the current month.
+
+### Mid Run
+![Mid Run](https://github.com/AHernanData/Economy-Simulation/blob/main/images/during_run.PNG?raw=true)
+
+This is an example of the simulation mid-run. Most logs are citizens being paid at their jobs and the business owners stating profits from their respective companies.
+
+### Simulation End
+![Run End](https://github.com/AHernanData/Economy-Simulation/blob/main/images/run_end.PNG?raw=true)
+
+The end of a simulation starts by staing the number of unemployed individuals. Then it names off the richest citizen with their wealth and the richest company with its owner. Finally it states the number of active and failed businesses with a summary of each type of business that has failed.
+
+### Citizen Log
+![citizen log](https://github.com/AHernanData/Economy-Simulation/blob/main/images/r_citizen_log.PNG?raw=true)
+
+Here is an example log from the richest citizen at the end of a run. Mr. Goodman started with a fair amount of wealth and created the company, Yummy Summer Squash which made them more money throughout the simulation.
+
+### Company log
+![company log](https://github.com/AHernanData/Economy-Simulation/blob/main/images/r_company_log.PNG?raw=true)
+
+Here is an example company log of the company with the highest worth at the end of the simulation. Sauteed Vegetables company was started during month 3 by Willie Bonham and early on does not make much money as it starts taking on employees. 
+By the end of month 13, however, the company is doing much better:
+
+![company log end](https://github.com/AHernanData/Economy-Simulation/blob/main/images/r_company_log_end.PNG?raw=true)
+
+Note that the company is making money from so many individuals that the log goes off the screen!
+
+
+### Bank Failure
+![Bank Fail](https://github.com/AHernanData/Economy-Simulation/blob/main/images/fed_reserve_failure.PNG)
+
+During the simulation, banks must keep to a federal reserve limit of 20%. They will use their own funds to offset a failure to maintain the reserve at the end of a month, but if they fail to manage keeping to the reserve a total of 5 times, the bank will go bankrupt.
+
+
+
+
+
+
+
+
+
 
 
